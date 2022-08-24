@@ -7,10 +7,16 @@ export const theme = extendTheme({
   },
   colors: {
     yellow: {
-      500: 'FFBA08',
+      500: '#FFBA08',
     },
     blackAlpha: {
-      800: '#47585B'
-    }
+      800: '#47585B',
+    },
+    gray: {
+      200: '#F5F8FA',
+      300: '#DADADA',
+      400: '#999999',
+      
+    },
   }
 })

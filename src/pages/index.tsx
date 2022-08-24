@@ -1,7 +1,6 @@
 import { Box, Divider, Text, VStack } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Header } from '../components/Header'
 import { Banner } from '../components/Banner'
 import { TravelTypes } from '../components/TravelTypes'
 import { ContinentsSlide } from '../components/ContinentsSlide'
@@ -13,14 +12,10 @@ const Home: NextPage = () => {
         <title>World Trip!</title>
       </Head>
 
-      <VStack>
-        <Header />
-
+      <VStack bgColor='gray.200' pb="30px">
         <Banner />
 
-        <Box p="80px 0">
-          <TravelTypes />
-        </Box>
+        <TravelTypes />
 
         <Divider w="90px" borderColor="blackAlpha.800" borderBottomWidth="2px" />
 
@@ -36,9 +31,9 @@ const Home: NextPage = () => {
           Então escolha seu continente
         </Text>
 
-        <Box pb="30px">
-          <ContinentsSlide />
-        </Box>
+
+        <ContinentsSlide />
+
       </VStack>
     </>
   )
